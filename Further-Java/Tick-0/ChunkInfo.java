@@ -53,13 +53,13 @@ public class ChunkInfo
         this.raf = raf;
         this.raf.seek(initSeek);
         this.ds = new FileInputStream(raf.getFD());
-	      this.allocatedMemory = 16384;
+	this.allocatedMemory = 16384;
         buff = new byte[allocatedMemory];
-	      buffSize = ExternalSort.buffIteratorAux;
-	      for (int i=0;i<buffSize;i++)
-	      {
-	          buff[i] = (byte)ExternalSort.buffAux[i];
-	      }
+        buffSize = ExternalSort.buffIteratorAux; 
+        for (int i=0;i<buffSize;i++)
+        {
+            buff[i] = (byte)ExternalSort.buffAux[i];
+	}
     }
 
     public int getPos() { return pos; }
