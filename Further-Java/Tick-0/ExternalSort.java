@@ -219,22 +219,7 @@ public class ExternalSort
         chunk[j] = chunk[i];
         chunk[i] = t;
     }
-/*
-    public static void insertionSort() 
-    {
-    	for (int i = 1; i < iterator; i++) 
-        {
-            int j = i;
-            int val = t[i];
-      	    while (j > 0 && t[j-1] > val)
-            {
-                t[j] = t[j-1];
-                j--;
-            }
-            t[j] = val;
-        }
-    }
-*/
+    
     static void Heapify(int pos)
     {
         if (pos > heap_size) return;
