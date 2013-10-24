@@ -29,7 +29,7 @@ public class ChunkInfo
     {
         buffIterator = 0;
         int lenToRead = Math.min(allocatedMemory, ((this.siz - this.pos) << 2));
-	      buffSize = ds.read(buff, 0, lenToRead); 
+	buffSize = ds.read(buff, 0, lenToRead); 
     }
 
     private int readByte() throws IOException, EOFException
