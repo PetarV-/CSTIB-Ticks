@@ -22,14 +22,14 @@ public class Heap
     public void Push(Pair x)
     {
         PQ[++heap_size] = x;
-    	  int pos = heap_size;
+    	int pos = heap_size;
         while (pos > 1 && PQ[pos/2].getPayload() > PQ[pos].getPayload())
       	{
             Pair tmp = PQ[pos/2];
             PQ[pos/2] = PQ[pos];
             PQ[pos] = tmp;
           	pos /= 2;
-    	  }
+        }
     }
 
     public int GetMinimum()
