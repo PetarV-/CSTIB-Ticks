@@ -37,4 +37,3 @@ public class SafeMessageQueue<T> implements MessageQueue<T>
 		return ret;
 	}
 }
-
